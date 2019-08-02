@@ -15,6 +15,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URI;
+import java.net.URL;
 
 @RunWith(Cucumber.class)
 @CucumberOptions
@@ -32,21 +33,8 @@ public class TestRunner {
 
     @Before
     public void setUp() {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setBrowserName("chrome");
-        capabilities.setVersion("75.0");
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", false);
-
-        try {
-            RemoteWebDriver driver = new RemoteWebDriver(
-                    URI.create("http://selenoid:4444/wd/hub").toURL(),
-                    capabilities
-            );
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
         Configuration.startMaximized = false;
+        Configuration.browser = "firefox";
         Configuration.reportsFolder = "target/surefire-reports";
     }
 }
