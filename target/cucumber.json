@@ -1,0 +1,68 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-08-02T19:51:55.622Z",
+        "line": 3,
+        "name": "personal area test",
+        "description": "",
+        "id": "complex-test;personal-area-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2527316336,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am loggined",
+            "match": {
+              "location": "MyStepdefs.iAmLoggined()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 520790791,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I check title page \"Войти\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Войти\"",
+                  "offset": 19
+                }
+              ],
+              "location": "MyStepdefs.iCheckTitlePage(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@prodTest"
+          }
+        ]
+      }
+    ],
+    "name": "Complex test",
+    "description": "",
+    "id": "complex-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/prodTest.feature",
+    "tags": [
+      {
+        "name": "@prodTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

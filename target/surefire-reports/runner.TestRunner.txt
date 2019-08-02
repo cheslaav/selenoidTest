@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.611 sec <<< FAILURE!
+personal area test(Complex test)  Time elapsed: 6.315 sec  <<< FAILURE!
+Element should be visible {head > title:nth-child(2)}
+Element: '<title displayed:false></title>'
+Screenshot: file:/home/vitaliy/IdeaProjects/selenoidTest/build/reports/tests/1564774624760.0.png
+Page source: file:/home/vitaliy/IdeaProjects/selenoidTest/build/reports/tests/1564774624760.0.html
+Timeout: 4 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:24)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:10)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy15.shouldBe(Unknown Source)
+	at steps.MyStepdefs.iCheckTitlePage(MyStepdefs.java:19)
+	at ✽.I check title page "ТендерПро"(file:src/test/resources/prodTest.feature:5)
+
